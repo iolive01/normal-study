@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+
+   <head>
+     
+      <!-- Bootstrap -->
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+      <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+      
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/  bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- doesn't work -->
+      <link rel="stylesheet" type="text/css" href="css/normal_css.css">
+
+      <!-- Custom style -->
+      <style type="text/css"> 
+        h1 {
+            font-size: 32px;
+            color: #7fb163;
+            text-align: center;
+        }
+
+        .radio_labels {
+            width: 150px;
+        }
+        
+        input[type="radio"]{
+          margin-left: 30px;
+        }
+
+      </style> 
+
+      
+      <title>Volunteer with Constant Therapy</title>
+      <h1> Volunteer with Constant Therapy</h1>
+
+   </head>
+
+   <body>
+
+      <p class="text-center"> Thank you for offering your time to Constant Therapy. Your participation in this study will really help the users of our app. </p>
+      <div class="container">
+         <form action="" method="post" id="sign_up" enctype="multipart/form-data" >
+            <div class="col-xs-20"
+            <fieldset>
+
+               <!-- NAME -->
+               <label for="name">Name:</label>
+               <br />
+               <input type="text" id="name" class="form-control" name="name" placeholder="Please enter your full name" 
+               required="" 
+               />
+               <br />
+
+               <!-- EMAIL -->
+               <label for="email">Email:</label> 
+               <br />
+               <input type="email" id="email" class="form-control" name="email" placeholder="Please enter your email address" required="" />
+               <br />
+
+               <!-- AGE -->
+               <label for="age">Age:</label>
+               <br />
+               <input type="number" id="age" class="form-control" name="age" min="5" max="150"
+                  placeholder="Please enter your age" required="">
+               <br />
+
+               <!-- GENDER -->
+               <label for="gender">Gender:</label>
+               <select name= "gender" class="form-control" id="gender" 
+                  required="">
+                  <option value="">---</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Other">Other</option>
+                  <option value="Prefer not to say">Prefer not to say</option>
+               </select>
+               <br />
+
+               <!-- EDUCATION LEVEL -->
+               <label for="education">Level of Education:</label>
+               <select name= "education" class="form-control" id="education" required="">
+                  <option value="">---</option>
+                  <option value="Sixth">Sixth grade</option>
+                  <option value="Seventh grade">Seventh grade</option>
+                  <option value="Eighth grade">Eighth grade</option>
+                  <option value="Some high school">High school</option>
+                  <option value="Some college">Some college</option>
+                  <option value="College">College</option>
+               </select>
+               <br /> 
+
+               <!--new diagnoses  -->
+               <label>Have you ever been diagnosed with any of the following?:</label> <br />
+               <label for="brain_injury" name="brain_injury" class=" radio-inline radio_labels">Brain injury: </label>
+               <input type="radio" name="brain_injury" value="yes" required="" > Yes
+               <input type="radio" name="brain_injury" value="no"> No<br>
+
+              <label for="stroke" name="stroke" class="radio-inline radio_labels">Stroke: </label>
+               <input type="radio" name="stroke" value="yes" required > Yes
+               <input type="radio" name="stroke" value="no"> No<br>
+
+
+              <label for="aphasia" name="aphasia" class="radio-inline 
+              radio_labels">Aphasia: </label>
+               <input type="radio" name="aphasia" value="yes" required> Yes
+               <input type="radio" name="aphasia" value="no"> No<br>
+
+
+              <label for="learning_disorder" name="learning_disorder" class="radio-inline radio_labels">
+                Learning Disorder: </label>
+               <input type="radio" name="learning_disorder" value="yes" required> Yes
+               <input type="radio" name="learning_disorder" value="no"> No<br>
+
+
+              <label for="dementia" name="dementia" class="radio-inline
+              radio_labels">Dementia: </label>
+               <input type="radio" name="dementia" value="yes" required> Yes
+               <input type="radio" name="dementia" value="no"> No<br>
+
+               <br />
+
+               <!-- TABLET ACCESS -->
+               <label for="tablet">Do you have access to a tablet?</label>
+               <br />
+               <select name= "tablet" class="form-control" required="">
+            	  <option value="">---</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+               </select>
+               <br />
+
+               <button type="submit" class="btn btn-default">Submit</button>
+               <br />
+               <p class="help-block"> Questions? Email iris.oliver@constanttherapy.com </p>
+            </fieldset>
+            </div>   
+         </form>
+      </div>
+   </body>
